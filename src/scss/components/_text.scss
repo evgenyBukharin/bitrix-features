@@ -1,0 +1,22 @@
+.text {
+	&__area {
+		& .text__secondary:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+	&__primary {
+		color: var(--black-color);
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: 16px;
+	}
+	&__secondary {
+		color: var(--black-color);
+		font-size: 18px;
+		line-height: 1.8;
+		font-weight: 400;
+		margin: 0;
+	}
+}

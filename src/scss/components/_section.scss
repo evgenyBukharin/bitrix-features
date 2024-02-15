@@ -1,0 +1,89 @@
+.section {
+	padding-top: 76px;
+	&__flex {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 30px;
+	}
+	&__column {
+		max-width: 768px;
+	}
+	&__image {
+		width: 100%;
+		height: auto;
+	}
+	&-office {
+		& .section {
+			&__image {
+				max-width: 980px;
+			}
+		}
+	}
+	&-crm {
+		& .section {
+			&__flex {
+				flex-direction: row-reverse;
+				justify-content: space-evenly;
+			}
+			&__image {
+				max-width: 680px;
+			}
+			&__column {
+				max-width: 480px;
+			}
+		}
+	}
+	&-tasks {
+		& .section {
+			&__image {
+				max-width: 920px;
+			}
+		}
+	}
+	&-copilot {
+		& .section {
+			&__flex {
+				flex-direction: row-reverse;
+				justify-content: space-evenly;
+			}
+			&__image {
+				max-width: 920px;
+			}
+		}
+	}
+	&-sites {
+		& .section {
+			&__image {
+				max-width: 920px;
+			}
+		}
+	}
+	&-shop {
+		& .section {
+			&__image {
+				max-width: 920px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1330px) {
+	.section {
+		&__flex {
+			flex-direction: column !important;
+			gap: 10px;
+			padding-bottom: 20px;
+		}
+		&__image {
+			max-width: 910px;
+		}
+		&-crm {
+			.section {
+				&__image {
+					max-width: 860px;
+				}
+			}
+		}
+	}
+}
